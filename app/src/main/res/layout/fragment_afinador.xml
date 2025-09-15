@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameAds"
+            android:layout_width="350dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/switchRepeticao"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </FrameLayout>
+
+        <Switch
+            android:id="@+id/switchRepeticao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:checked="true"
+            android:text="Repetição do som: "
+            android:textColor="@color/branco"
+            android:textColorHighlight="@color/lightGreen"
+            android:textColorHint="@color/verdeescuro"
+            android:textColorLink="@color/design_default_color_error"
+            android:thumbTint="@color/laranja"
+            android:trackTint="@color/azulclarinho"
+            app:layout_constraintBottom_toTopOf="@+id/imageCavaquinho"
+            app:layout_constraintEnd_toStartOf="@+id/guiaDireita"
+            app:layout_constraintStart_toStartOf="@+id/guiaEsquerda" />
+
+        <Button
+            android:id="@+id/buttonRe"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/afinadorre"
+            android:backgroundTint="@color/azulmeioescuro"
+            app:layout_constraintEnd_toStartOf="@id/imageCavaquinho"
+            app:layout_constraintTop_toTopOf="@+id/imageCavaquinho" />
+
+        <Button
+            android:id="@+id/buttonLa"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/afinacaola"
+            android:backgroundTint="@color/azulmeioescuro"
+            app:layout_constraintEnd_toStartOf="@id/imageCavaquinho"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRe" />
+
+        <Button
+            android:id="@+id/buttonMi"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/afinadormi"
+            android:backgroundTint="@color/azulmeioescuro"
+            app:layout_constraintEnd_toStartOf="@id/imageCavaquinho"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLa" />
+
+        <Button
+            android:id="@+id/buttonSol"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/afinadorsol"
+            android:backgroundTint="@color/azulmeioescuro"
+            app:layout_constraintStart_toEndOf="@+id/imageCavaquinho"
+            app:layout_constraintTop_toTopOf="@+id/imageCavaquinho" />
+
+        <Button
+            android:id="@+id/buttonSi"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/afinadorsi"
+            android:backgroundTint="@color/azulmeioescuro"
+            app:layout_constraintStart_toEndOf="@+id/imageCavaquinho"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSol" />
+
+        <Button
+            android:id="@+id/buttonMizinha"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/afinadormi"
+            android:backgroundTint="@color/azulmeioescuro"
+            app:layout_constraintStart_toEndOf="@+id/imageCavaquinho"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSi" />
+
+        <ImageView
+            android:id="@+id/imageCavaquinho"
+            android:layout_width="0dp"
+            android:layout_height="400dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guiaDireita"
+            app:layout_constraintStart_toStartOf="@+id/guiaEsquerda"
+            app:srcCompat="@drawable/afinadorfundo" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guiaEsquerda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="80dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guiaDireita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="80dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

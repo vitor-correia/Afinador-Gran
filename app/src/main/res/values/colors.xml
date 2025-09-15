@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#404c52</color>
+    <color name="colorPrimaryDark">#141f24</color>
+    <color name="colorAccent">#ff701e</color>
+    <color name="lightGreen">#38FF00</color>
+    <color name="cinzaescuro">#1a191a</color>
+    <color name="cinzaclaro">#3b3a3a</color>
+    <color name="browser_actions_bg_grey">#FFFFFF</color>
+    <color name="azulclaro">#65A4DA</color>
+    <color name="azulescuro">#003785</color>
+    <color name="azulmeioescuro">#1465bb    </color>
+    <color name="verdeescuro">#21766A</color>
+    <color name="azulclarinho">#81c9fa</color>
+
+
+    <color name="azul">#4562c9</color>
+    <color name="azulcinzentoclaro">#363a40</color>
+    <color name="azulmarinhoescuro">#141f24</color>
+    <color name="azulcinzentoescuro">#0d0e0f</color>
+    <color name="branco">#ffffff</color>
+    <color name="laranjaClaro">#f46d50</color>
+    <color name="laranjaEscuro">#bc2c0c</color>
+    <color name="laranja">#f14924</color>
+    <color name="preto">#000000</color>
+
+    <color name="transparente">#00FFFFFF</color>
+</resources>
